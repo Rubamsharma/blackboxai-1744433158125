@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - SP Smart School Jammu</title>
+    <meta name="description" content="Admission process, requirements, and application form for SP Smart School Jammu">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-800">SP Smart<span class="text-orange-500">School</span></h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-800">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-800">About</a>
+                    <a href="academics.html" class="text-gray-600 hover:text-blue-800">Academics</a>
+                    <a href="admission.html" class="text-blue-800 font-medium">Admission</a>
+                    <a href="facilities.html" class="text-gray-600 hover:text-blue-800">Facilities</a>
+                    <a href="gallery.html" class="text-gray-600 hover:text-blue-800">Gallery</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-800">Contact</a>
+                </div>
+                
+                <!-- Admission Button -->
+                <div class="hidden md:block">
+                    <a href="admission.html" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition">Apply Now</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Admission Hero Section -->
+    <section class="bg-blue-800 text-white py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Admission Process</h2>
+            <p class="text-xl">Join our community of learners and shape your future</p>
+        </div>
+    </section>
+
+    <!-- Admission Steps -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">How to Apply</h3>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-blue-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">1</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Submit Application</h4>
+                                <p class="text-gray-600">Complete the online application form with all required information and documents.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-blue-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">2</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Document Verification</h4>
+                                <p class="text-gray-600">Submit required documents for verification at the school office.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-blue-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">3</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Entrance Test</h4>
+                                <p class="text-gray-600">Appear for entrance test and interview as per scheduled date.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-blue-800 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">4</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Final Admission</h4>
+                                <p class="text-gray-600">Complete admission process by paying fees upon selection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Required Documents</h3>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">For New Admission</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Birth Certificate</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Transfer Certificate (if applicable)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Previous Academic Records</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Passport Size Photographs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Additional Documents</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Aadhar Card Copy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Parent's ID Proof</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Residence Proof</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-600">Medical Certificate</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Application Form</h3>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-8">
+                <form class="space-y-6">
+                    <!-- Student Information -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Student Information</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Date of Birth</label>
+                                <input type="date" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Gender</label>
+                                <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Class Applying For</label>
+                                <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">Select Class</option>
+                                    <option value="1">Class I</option>
+                                    <option value="2">Class II</option>
+                                    <option value="3">Class III</option>
+                                    <option value="4">Class IV</option>
+                                    <option value="5">Class V</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parent Information -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Parent/Guardian Information</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Father's Name</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Mother's Name</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Contact Number</label>
+                                <input type="tel" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Address</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Complete Address</label>
+                                <textarea class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3" required></textarea>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">City</label>
+                                    <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">State</label>
+                                    <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">PIN Code</label>
+                                    <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-800 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-900 transition">
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">SP Smart School</h4>
+                    <p class="text-gray-400">Providing quality education and shaping future leaders since 1998.</p>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h5 class="font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="admission.html" class="text-gray-400 hover:text-white">Admissions</a></li>
+                        <li><a href="academics.html" class="text-gray-400 hover:text-white">Academics</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h5 class="font-semibold mb-4">Contact Info</h5>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> Jammu, Jammu & Kashmir</li>
+                        <li><a href="tel:+911912345678" class="text-gray-400 hover:text-white"><i class="fas fa-phone mr-2"></i> +91 191 234 5678</a></li>
+                        <li><a href="mailto:info@spsmartschool.com" class="text-gray-400 hover:text-white"><i class="fas fa-envelope mr-2"></i> info@spsmartschool.com</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h5 class="font-semibold mb-4">Connect With Us</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SP Smart School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
