@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - SP Smart School Jammu</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Include the Jitsi Meet External API -->
+    <script src='https://meet.jit.si/external_api.js'></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        #jitsi-container {
+            height: 600px;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Dashboard Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-800">SP Smart<span class="text-orange-500">School</span></h1>
+                </div>
+                
+                <!-- Teacher Info -->
+                <div class="flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="text-sm text-gray-600">Welcome,</p>
+                        <p class="font-semibold">Teacher Name</p>
+                    </div>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid md:grid-cols-4 gap-6">
+            <!-- Sidebar -->
+            <div class="md:col-span-1">
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <nav class="space-y-4">
+                        <a href="#" class="flex items-center text-blue-600 font-medium">
+                            <i class="fas fa-home mr-3"></i>
+                            Dashboard
+                        </a>
+                        <a href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                            <i class="fas fa-users mr-3"></i>
+                            My Classes
+                        </a>
+                        <a href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                            <i class="fas fa-video mr-3"></i>
+                            Online Teaching
+                        </a>
+                        <a href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                            <i class="fas fa-book mr-3"></i>
+                            Assignments
+                        </a>
+                        <a href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                            <i class="fas fa-chart-bar mr-3"></i>
+                            Student Progress
+                        </a>
+                        <a href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                            <i class="fas fa-calendar mr-3"></i>
+                            Schedule
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="md:col-span-3 space-y-6">
+                <!-- Quick Stats -->
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="flex items-center">
+                            <div class="p-3 bg-blue-100 rounded-full">
+                                <i class="fas fa-users text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-500">Total Students</p>
+                                <p class="text-2xl font-semibold">150</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="flex items-center">
+                            <div class="p-3 bg-green-100 rounded-full">
+                                <i class="fas fa-book text-green-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-500">Classes</p>
+                                <p class="text-2xl font-semibold">5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="flex items-center">
+                            <div class="p-3 bg-orange-100 rounded-full">
+                                <i class="fas fa-clock text-orange-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-500">Hours Taught</p>
+                                <p class="text-2xl font-semibold">24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Class Section -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-semibold mb-4">Online Teaching</h2>
+                    <div class="space-y-4">
+                        <!-- Class Controls -->
+                        <div class="flex space-x-4 mb-4">
+                            <button onclick="startClass()" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                                <i class="fas fa-video mr-2"></i>Start Class
+                            </button>
+                            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300 transition">
+                                <i class="fas fa-calendar-plus mr-2"></i>Schedule Class
+                            </button>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                                <i class="fas fa-share-screen mr-2"></i>Share Screen
+                            </button>
+                        </div>
+                        
+                        <!-- Video Conference Container -->
+                        <div id="jitsi-container" class="rounded-lg"></div>
+                    </div>
+                </div>
+
+                <!-- Class Management -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-semibold mb-4">Class Management</h2>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Class</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Students</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Average Grade</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">Class 10-A</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">30</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">85%</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <button class="text-blue-600 hover:text-blue-800 mr-3">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800 mr-3">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">Class 10-B</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">32</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">82%</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <button class="text-blue-600 hover:text-blue-800 mr-3">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800 mr-3">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-semibold mb-4">Recent Activities</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="p-2 bg-blue-100 rounded-full">
+                                <i class="fas fa-book text-blue-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="font-medium">Assignment Posted</p>
+                                <p class="text-sm text-gray-500">Mathematics Chapter 5 - Class 10-A</p>
+                                <p class="text-xs text-gray-400">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-video text-green-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="font-medium">Online Class Completed</p>
+                                <p class="text-sm text-gray-500">Science Class - Class 10-B</p>
+                                <p class="text-xs text-gray-400">4 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include main.js -->
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Handle start class button click
+        document.querySelector('button[onclick="startClass()"]').addEventListener('click', () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (user) {
+                createMeeting(user.current_class, user.username);
+            } else {
+                showError('Please log in again');
+                window.location.href = '/login.html';
+            }
+        });
+
+        // Handle logout button click
+        document.querySelector('button:contains("Logout")').addEventListener('click', logout);
+    </script>
+</body>
+</html>
