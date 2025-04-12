@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | UDISE+</title>
+    <meta name="description" content="The requested page could not be found">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-600">UDISE<span class="text-orange-500">+</span></h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="statistics.html" class="text-gray-600 hover:text-blue-600">Statistics</a>
+                    <a href="news.html" class="text-gray-600 hover:text-blue-600">News</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                
+                <!-- Login Button -->
+                <div class="hidden md:block">
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Login</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 404 Content -->
+    <section class="min-h-[80vh] flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-2xl mx-auto">
+                <!-- 404 Icon -->
+                <div class="text-blue-600 mb-8">
+                    <i class="fas fa-search text-8xl"></i>
+                </div>
+                
+                <!-- Error Message -->
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Page Not Found</h2>
+                <p class="text-xl text-gray-600 mb-8">The page you're looking for doesn't exist or has been moved.</p>
+                
+                <!-- Action Buttons -->
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="index.html" class="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition inline-flex items-center justify-center">
+                        <i class="fas fa-home mr-2"></i> Go to Homepage
+                    </a>
+                    <a href="contact.html" class="bg-gray-200 text-gray-700 px-8 py-3 rounded-md font-medium hover:bg-gray-300 transition inline-flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i> Contact Support
+                    </a>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="mt-12">
+                    <h3 class="text-lg font-semibold mb-4">You might be interested in:</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="about.html" class="text-blue-600 hover:text-blue-700">
+                            <i class="fas fa-info-circle mr-2"></i> About UDISE+
+                        </a>
+                        <a href="statistics.html" class="text-blue-600 hover:text-blue-700">
+                            <i class="fas fa-chart-bar mr-2"></i> Education Statistics
+                        </a>
+                        <a href="news.html" class="text-blue-600 hover:text-blue-700">
+                            <i class="fas fa-newspaper mr-2"></i> Latest News
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">UDISE+</h4>
+                    <p class="text-gray-400">Unified District Information System for Education Plus</p>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h5 class="font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="statistics.html" class="text-gray-400 hover:text-white">Statistics</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-white">News</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h5 class="font-semibold mb-4">Resources</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Downloads</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h5 class="font-semibold mb-4">Connect With Us</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 UDISE+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
